@@ -1,13 +1,19 @@
 import '../styles/globals.css'
 import { MoralisProvider } from 'react-moralis'
+import { ZamozaProvider } from '../context/ZamozaContext'
+import { ModalProvider } from 'react-simple-hook-modal'
 
 function MyApp({ Component, pageProps }) {
   return (
     <MoralisProvider
-    serverUrl={process.env.NEXT_PUBLIC_MORALIS_SERVER}
-    appId={process.env.NEXT_PUBLIC_MORALIS_ID}
+      appId='4MGZ52fxIXN8bjr2QjeF6qXm6bbsE3nF8qlhUUeK'
+      serverUrl='https://lkip5xjqrtuk.usemoralis.com:2053/server'
     >
-      <Component {...pageProps} />
+      <ZamozaProvider>
+        <ModalProvider>
+          <Component {...pageProps} />
+        </ModalProvider>
+      </ZamozaProvider>
     </MoralisProvider>
   )
 }
