@@ -31,6 +31,28 @@ export const ZamozaProvider = ({children}) => {
         isLoading: userDataisLoading,
     } = useMoralisQuery('assets')
 
+    const getBalance = async () => {
+        try {
+            if (!isAuthenticated || !currentAccount) return
+            
+            const options = {
+                contractAddress: zamozaCoinAddress,
+                functionName: 'balanceOf',
+                abi: zamozaAbi,
+                params: {
+                    account: currentAccount
+                },
+            }
+
+            if(isWeb3Enabled) {
+                const response = await Moralis.executeFunction(options)
+                setBalance(response.toString())
+            }
+        } catch(error) {
+            console.log(error)
+        }
+    }
+
     useEffect(()=>{
         ;(async()=>{
             if(isAuthenticated) {
@@ -40,8 +62,9 @@ export const ZamozaProvider = ({children}) => {
                 const account = await user?.get('ethAddress')
                 setCurrentAccount(account)
             }
+            
         })()
-    },[isAuthenticated,user,username,currentAccount])
+    },[isAuthenticated,user,username,currentAccount,getBalance])
 
     useEffect(() => {
         ;(async()=>{
@@ -62,28 +85,6 @@ export const ZamozaProvider = ({children}) => {
             }
         } else {
             console.log('No User')
-        }
-    }
-
-    const getBalance = async () => {
-        try {
-            if (!isAuthenticated || !currentAccount) return
-            
-            const options = {
-                contractAddress: zamozaCoinAddress,
-                functionName: 'balanceOf',
-                abi: zamozaAbi,
-                params: {
-                    account: currentAccount
-                },
-            }
-
-            if(isWeb3Enabled) {
-                const response = await Moralis.executeFunction(options)
-                setBalance(response.toString())
-            }
-        } catch(error) {
-            console.log(error)
         }
     }
 

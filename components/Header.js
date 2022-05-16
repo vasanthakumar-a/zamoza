@@ -12,63 +12,71 @@ import {
   ModalTransition,
 } from 'react-simple-hook-modal'
 import 'react-simple-hook-modal/dist/styles.css'
-// import BuyModal from './BuyModal'
+import BuyModal from './BuyModal'
 
 const Header = () => {
-    const {openModal,isModalOpen,closeModal} = useModal()
-    const balance = "99"
+  const styles = {
+    container: `h-[60px] w-full flex items-center gap-5 px-16`,
+    logo: `flex items-center ml-[20px] cursor-pointer flex-1`,
+    search: `p-[25px] mr-[30px] w-[400px] h-[40px] bg-white rounded-full shadow-lg flex flex items-center border border-black`,
+    searchInput: `bg-transparent focus:outline-none border-none flex-1 items-center flex`,
+    menu: `flex items-center gap-6`,
+    menuItem: `flex items-center text-md font-bold cursor-pointer`,
+    coins: `ml-[10px]`,
+  }
 
-    const styles = {
-        container: `h-[60px] w-full flex items-center gap-5 px-16`,
-        logo: `flex items-center ml-[20px] cursor-pointer flex-1`,
-        search: `p-[25px] mr-[30px] w-[400px] h-[40px] bg-white rounded-full shadow-lg flex flex items-center border border-black`,
-        searchInput: `bg-transparent focus:outline-none border-none flex-1 items-center flex`,
-        menu: `flex items-center gap-6`,
-        menuItem: `flex items-center text-md font-bold cursor-pointer`,
-        coins: `ml-[10px]`,
-    }
-    return (
-    <div className={styles.container}>
+  const { balance, buyTokens, getBalance } = useContext(ZamozaContext)
+  const { openModal, isModalOpen, closeModal } = useModal()
+  return (
+    <ModalProvider>
+      <div className={styles.container}>
         <div className={styles.logo}>
-            <Image 
+          <Image
             src={logo}
-            alt='zamoza'
+            alt='Zamoza'
             height={100}
-            width={100}
+            width={150}
             className='object-cover'
-            />
+          />
         </div>
         <div className={styles.search}>
-            <input type="text" 
-            placeholder='Search Your Assets....'
+          <input
+            type='text'
+            placeholder='Search Your Assets...'
             className={styles.searchInput}
-            />
-            <IoMdSearch fontSize={20} />
+          />
+          <IoMdSearch fontSize={20} />
         </div>
         <div className={styles.menu}>
-            <div className={styles.menuItem}>New Release</div>
-            <div className={styles.menuItem}>Featured</div>
-            {balance ? (
-                <div className={styles.balance, styles.menuItem}
-                onClick={openModal}
-                >
-                {balance}
-                <FaCoins className={styles.coins} />
-                <Modal isOpen={isModalOpen} transition={ModalTransition.SCALE}>
-                    {/* <BuyModal close={closeModal} buyTokens={buyTokens} /> */}
-                </Modal>
-                </div>
-            ) : (
-                <div className={styles.balance, styles.menuItem} onClick={openModal}>
-                    0 ZC <FaCoins className={styles.coins} />
-                    <Modal isOpen={isModalOpen} transition={ModalTransition.SCALE}>
-                        {/* <BuyModal close={closeModal} buyTokens={buyTokens} /> */}
-                    </Modal>
-                </div>
-            )}
-            <CgMenuGridO fontSize={30} className={styles.menuItem} />
+          <div className={styles.menuItem}>New Releases</div>
+          <div className={styles.menuItem}>Featured</div>
+          {balance ? (
+            <div
+              className={(styles.balance, styles.menuItem)}
+              onClick={openModal}
+            >
+                
+              {balance}
+              <FaCoins className={styles.coins} />
+              <Modal isOpen={isModalOpen} transition={ModalTransition.SCALE}>
+                <BuyModal close={closeModal} buyTokens={buyTokens} />
+              </Modal>
+            </div>
+          ) : (
+            <div
+              className={(styles.balance, styles.menuItem)}
+              onClick={openModal}
+            >
+              0 ZC <FaCoins className={styles.coins} />
+              <Modal isOpen={isModalOpen} transition={ModalTransition.SCALE}>
+                <BuyModal close={closeModal} buyTokens={buyTokens} />
+              </Modal>
+            </div>
+          )}
+          <CgMenuGridO fontSize={30} className={styles.menuItem} />
         </div>
-    </div>
+      </div>
+    </ModalProvider>
   )
 }
 
