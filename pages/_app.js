@@ -6,8 +6,8 @@ import { ModalProvider } from 'react-simple-hook-modal'
 function MyApp({ Component, pageProps }) {
   return (
     <MoralisProvider
-      appId='4MGZ52fxIXN8bjr2QjeF6qXm6bbsE3nF8qlhUUeK'
-      serverUrl='https://lkip5xjqrtuk.usemoralis.com:2053/server'
+      serverUrl='https://inm1zo7ggx2z.usemoralis.com:2053/server'
+      appId='2ZBbqFcUCoTBYQmm4yXiHixRmMQZ14vwlTS1YwhP'
     >
       <ZamozaProvider>
         <ModalProvider>

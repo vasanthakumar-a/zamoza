@@ -53,9 +53,9 @@ const BuyModal = ({ close, buyTokens }) => {
             <IoIosClose
               onClick={() => {
                 close()
-                setAmountDue('')
-                setTokenAmount('')
-                setEtherscanLink('')
+                // setAmountDue('')
+                // setTokenAmount('')
+                // setEtherscanLink('')
               }}
               fontSize={50}
               className='cursor-pointer'

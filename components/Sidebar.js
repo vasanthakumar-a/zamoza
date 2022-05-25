@@ -1,16 +1,17 @@
 import React, { useContext } from 'react'
-import Image from 'next/image'
-import { ConnectButton } from 'web3uikit'
-import Link from 'next/link'
-import { ZamozaContext } from '../context/ZamozaContext'
-import { FaBox } from 'react-icons/fa'
-import { BsFillBookmarkFill, BsFillPersonFill } from 'react-icons/bs'
-import { AiOutlineHistory } from 'react-icons/ai'
 import logo from '../assets/amazon_logo.png'
 import logoFull from '../assets/amazon_logo_full.png'
+import Image from 'next/image'
+import { FaBox } from 'react-icons/fa'
+import { BsFillBookmarkFill } from 'react-icons/bs'
+import { BsFillPersonFill } from 'react-icons/bs'
+import { ZamozaContext } from '../context/ZamozaContext'
+import { ConnectButton } from 'web3uikit'
+import { AiOutlineHistory } from 'react-icons/ai'
+import Link from 'next/link'
 
 const Sidebar = () => {
-  const styles ={
+  const styles = {
     container: `h-full w-[300px] flex flex-col bg-[#fff] static`,
     profile: ` w-full py-16 flex flex-col justify-center items-center rounded-r-3xl bg-gradient-to-t from-[#0d141c] to-[#42667e] mt-[40px] mb-[50px] border-2 border-[#fb9701]`,
     profilePicContainer: `flex  rounded-xl items-center justify-center w-full h-full mb-5`,
@@ -28,81 +29,82 @@ const Sidebar = () => {
 
   const {
     isAuthenticated,
+    buyTokens,
+    getBalance,
     nickname,
     setNickname,
     username,
-    handleSetUsername
+    handleSetUsername,
   } = useContext(ZamozaContext)
 
   return (
     <div className={styles.container}>
       <div className={styles.profile}>
-        {
-          isAuthenticated && (
-            <>
+        {isAuthenticated && (
+          <>
             <div className={styles.profilePicContainer}>
               <Image
-              src={`https://avatars.dicebear.com/api/pixel-art/${username}.svg`}
-              alt='profile'
-              className={styles.profilePic}
-              height={100}
-              width={100}
+                src={`https://avatars.dicebear.com/api/pixel-art/${username}.svg`}
+                alt='profile'
+                className={styles.profilePic}
+                height={100}
+                width={100}
               />
             </div>
             {!username ? (
               <>
                 <div className={styles.username}>
-                  <input 
-                  type="text"
-                  placeholder='Username'
-                  className={styles.usernameInput}
-                  value = {nickname}
-                  onChange = {e=> setNickname(e.target.value)}
+                  <input
+                    type='text'
+                    placeholder='Username....'
+                    className={styles.usernameInput}
+                    value={nickname}
+                    onChange={e => setNickname(e.target.value)}
                   />
                 </div>
                 <button
-                className={styles.setNickname}
-                onClick={handleSetUsername}
+                  className={styles.setNickname}
+                  onClick={handleSetUsername}
                 >
-                  Set Username
+                  Set Nickname
                 </button>
               </>
             ) : (
               <div>
-                <div className={styles.welcome}>Welcome {username}</div>
+                <div className={styles.welcome}>Wecome {username}</div>
               </div>
             )}
-            </>
-          )}
-          <div className={styles.connectButton}>
-            <ConnectButton />
-          </div>
+          </>
+        )}
+        <div className={styles.connectButton}>
+          <ConnectButton />
+        </div>
       </div>
       <div className={styles.menu}>
         <Link href='/'>
           <div className={styles.menuItem}>
-            <Image 
-            src={logo}
-            height={30}
-            width={30}
-            className={styles.amazonLogo}
+            <Image
+              src={logo}
+              height={30}
+              width={30}
+              className={styles.amazonLogo}
             />
-            My Amazon
-            <br /> board
+            My Zamoza
+            <br /> Board
           </div>
         </Link>
-          <div className={styles.menuItem}>
-            <FaBox />
-            Collections
-          </div>
-          <div className={styles.menuItem}>
-            <BsFillBookmarkFill />
-            Saved
-          </div>
-          <div className={styles.menuItem}>
-            <BsFillPersonFill />
-            Logout
-          </div>
+        <div className={styles.menuItem}>
+          <FaBox />
+          Collections
+        </div>
+        <div className={styles.menuItem}>
+          <BsFillBookmarkFill />
+          Saved
+        </div>
+        <div className={styles.menuItem}>
+          <BsFillPersonFill />
+          Profile
+        </div>
         <Link href='/history'>
           <div className={styles.menuItem}>
             <AiOutlineHistory />
@@ -111,7 +113,7 @@ const Sidebar = () => {
         </Link>
       </div>
       <div className={styles.companyName}>
-        <Image src={logoFull} alt='amazon' height={100} width={100} />
+        <Image src={logoFull} alt='Zamoza' height={100} width={100} />
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
-import Sidebar from "../components/Sidebar"
-import Main from "../components/Main"
+import Main from '../components/Main'
+import Sidebar from '../components/Sidebar'
 
 const styles = {
-  container:`h-full w-full flex bg-[#fff]`
+  container: `h-full w-full flex bg-[#fff]`,
 }
 
 export default function Home() {
