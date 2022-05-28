@@ -214,9 +214,9 @@
     "regenerator-runtime" "^0.13.4"
 
 "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.16.3", "@babel/runtime@^7.17.2", "@babel/runtime@^7.17.9", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.x", "@babel/runtime@7.x":
-  "integrity" "sha512-mTV1PibQHr88R1p4nH/uhR/TJ0mXGEgKTx6Mnd1cn/DSA9r8fqbd+d31xujI2C1pRWtxjy+HAcmtB+MEcF4VNg=="
-  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.2.tgz"
-  "version" "7.18.2"
+  "integrity" "sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug=="
+  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.3.tgz"
+  "version" "7.18.3"
   dependencies:
     "regenerator-runtime" "^0.13.4"
 
@@ -1340,9 +1340,9 @@
     "loglevel" "^1.8.0"
 
 "@toruslabs/base-controllers@^2.0.0":
-  "integrity" "sha512-0u9QO9P4/fVaFrW8jIHUlQisxPjLMNyxt9u8+FDKD9sL2Uq+/jnwde0Ri38BX2y7xZ3uJ+6OCUES2bb9/Itbow=="
-  "resolved" "https://registry.npmjs.org/@toruslabs/base-controllers/-/base-controllers-2.0.0.tgz"
-  "version" "2.0.0"
+  "integrity" "sha512-AHQDpuoOoUI/ePD/+LKtL7YPoprRA0IZ1asEarPm31j7Zs/FgSJFl+N1bOk+WpI379kybKf0/BtrBw6RlNvpfw=="
+  "resolved" "https://registry.npmjs.org/@toruslabs/base-controllers/-/base-controllers-2.0.1.tgz"
+  "version" "2.0.1"
   dependencies:
     "@toruslabs/broadcast-channel" "^5.0.2"
     "@toruslabs/http-helpers" "^3.0.0"
@@ -1567,9 +1567,9 @@
     "pump" "^3.0.0"
 
 "@toruslabs/torus-embed@^1.20.4", "@toruslabs/torus-embed@^1.23.0":
-  "integrity" "sha512-/5gagSwR4M3pIpGk9/RZ5futdtpf+dj3UnlvrkzVuoQ5qPoJeucyj1pzBU6ySyuF2cDViliE+p3p2OfMIQ2wZA=="
-  "resolved" "https://registry.npmjs.org/@toruslabs/torus-embed/-/torus-embed-1.23.1.tgz"
-  "version" "1.23.1"
+  "integrity" "sha512-Ianrk1tlEK7LuceBXVM+bVHgI5z0inEjuas1kp5i+Jd88JwVvZYfWjSFvwaSoeY+V4W7N3jvWXtN3IDqLo4ZhQ=="
+  "resolved" "https://registry.npmjs.org/@toruslabs/torus-embed/-/torus-embed-1.23.2.tgz"
+  "version" "1.23.2"
   dependencies:
     "@metamask/obs-store" "^7.0.0"
     "@toruslabs/fetch-node-details" "^6.0.1"
@@ -3349,7 +3349,7 @@
   "version" "4.1.1"
 
 "css-color-keywords@^1.0.0":
-  "integrity" "sha1-/qJhbcZ2spYmhrOvjb2+GAskTgU="
+  "integrity" "sha512-FyyrDHZKEjXDpNJYvVsV960FiqQyXc/LlYmsxl2BcdMb2WPx0OGRVgTg55rPSyLSNMqP52R9r8geSp7apN3Ofg=="
   "resolved" "https://registry.npmjs.org/css-color-keywords/-/css-color-keywords-1.0.0.tgz"
   "version" "1.0.0"
 
@@ -4474,7 +4474,7 @@
   "version" "1.1.0"
 
 "find-up@^2.1.0":
-  "integrity" "sha1-RdG35QbHF93UgndaK3eSCjwMV6c="
+  "integrity" "sha512-NWzkk0jSJtTt08+FBFMvXoeZnOJD+jTtsRmBYbAIzJdX6l7dLgR7CTubCM5/eDdPUBvLCeVasP1brfVR/9/EZQ=="
   "resolved" "https://registry.npmjs.org/find-up/-/find-up-2.1.0.tgz"
   "version" "2.1.0"
   dependencies:
@@ -7546,9 +7546,9 @@
     "utf8" "3.0.0"
 
 "web3uikit@^0.1.153":
-  "integrity" "sha512-OaHmIcBdxxv19HBz2RCdSsOBUk491Hs2ZXhyUUbF+Ajs+ckzH6anWQp1vdykT8o3YMjZisqY0ccCkyEZI0WFsw=="
-  "resolved" "https://registry.npmjs.org/web3uikit/-/web3uikit-0.1.153.tgz"
-  "version" "0.1.153"
+  "integrity" "sha512-FRgPE1sYhNUBXyCe5wxXr1gaIIjxtbalrLYuNfFx5UbTVVqbFKIWmX3EKoEVFHRPs9FgcMcOujKL9E7kBA9ULA=="
+  "resolved" "https://registry.npmjs.org/web3uikit/-/web3uikit-0.1.154.tgz"
+  "version" "0.1.154"
   dependencies:
     "@storybook/theming" "^6.4.21"
     "@walletconnect/web3-provider" "^1.7.1"
