@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import logo from '../assets/amazon_logo.png'
-import logoFull from '../assets/amazon_logo_full.png'
+import logo from '../assets/zamoza_icon.png'
+import logoFull from '../assets/zamoza_logo.png'
 import Image from 'next/image'
 import { FaBox } from 'react-icons/fa'
 import { BsFillBookmarkFill } from 'react-icons/bs'

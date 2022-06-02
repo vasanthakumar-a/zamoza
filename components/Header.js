@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { CgMenuGridO } from 'react-icons/cg'
-import logo from '../assets/amazon_logo_full.png'
+import logo from '../assets/zamoza_logo.png'
 import Image from 'next/image'
 import { IoMdSearch } from 'react-icons/io'
 import { ZamozaContext } from '../context/ZamozaContext'
@@ -55,7 +55,7 @@ const Header = () => {
               className={(styles.balance, styles.menuItem)}
               onClick={openModal}
             >
-              {balance}
+              {balance} ZC
               <FaCoins className={styles.coins} />
               <Modal isOpen={isModalOpen} transition={ModalTransition.SCALE}>
                 <BuyModal close={closeModal} buyTokens={buyTokens} />

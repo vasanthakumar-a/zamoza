@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\Mr_Vasanth\\Desktop\\Projects\\zamoza\\smart-contract\\contracts\\ZamozaCoin.sol": {
-      "lastModificationDate": 1652719957956,
-      "contentHash": "59b235875f7908d1887beced934df8ae",
+    "C:\\Users\\Mr_Vasanth\\Desktop\\amazon-blockchain-youtube-main\\Zamoza\\smart-contract\\contracts\\ZamozaCoin.sol": {
+      "lastModificationDate": 1653307960669,
+      "contentHash": "74e7a5678b016feb2efa564e28bcd98f",
       "sourceName": "contracts/ZamozaCoin.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -29,7 +29,6 @@
         }
       },
       "imports": [
-        "hardhat/console.sol",
         "@openzeppelin/contracts/token/ERC20/ERC20.sol",
         "@openzeppelin/contracts/access/Ownable.sol"
       ],
@@ -40,43 +39,8 @@
         "ZamozaCoin"
       ]
     },
-    "C:\\Users\\Mr_Vasanth\\Desktop\\Projects\\zamoza\\smart-contract\\node_modules\\hardhat\\console.sol": {
-      "lastModificationDate": 1652719726281,
-      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.4.22 <0.9.0"
-      ],
-      "artifacts": [
-        "console"
-      ]
-    },
-    "C:\\Users\\Mr_Vasanth\\Desktop\\Projects\\zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
-      "lastModificationDate": 1652720001060,
+    "C:\\Users\\Mr_Vasanth\\Desktop\\amazon-blockchain-youtube-main\\Zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1653308280150,
       "contentHash": "a9d2146925da52142435d3bb8df53c3c",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -114,8 +78,8 @@
         "ERC20"
       ]
     },
-    "C:\\Users\\Mr_Vasanth\\Desktop\\Projects\\zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
-      "lastModificationDate": 1652720001330,
+    "C:\\Users\\Mr_Vasanth\\Desktop\\amazon-blockchain-youtube-main\\Zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1653308282615,
       "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -151,8 +115,8 @@
         "Ownable"
       ]
     },
-    "C:\\Users\\Mr_Vasanth\\Desktop\\Projects\\zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
-      "lastModificationDate": 1652720001251,
+    "C:\\Users\\Mr_Vasanth\\Desktop\\amazon-blockchain-youtube-main\\Zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1653308282054,
       "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -186,8 +150,8 @@
         "IERC20"
       ]
     },
-    "C:\\Users\\Mr_Vasanth\\Desktop\\Projects\\zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
-      "lastModificationDate": 1652720001255,
+    "C:\\Users\\Mr_Vasanth\\Desktop\\amazon-blockchain-youtube-main\\Zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+      "lastModificationDate": 1653308282089,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -223,8 +187,8 @@
         "IERC20Metadata"
       ]
     },
-    "C:\\Users\\Mr_Vasanth\\Desktop\\Projects\\zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1652720000914,
+    "C:\\Users\\Mr_Vasanth\\Desktop\\amazon-blockchain-youtube-main\\Zamoza\\smart-contract\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1653308279123,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {

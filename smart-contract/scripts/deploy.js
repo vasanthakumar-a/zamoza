@@ -1,17 +1,17 @@
 const hre = require('hardhat')
 
 async function main() {
-  const ZamozaCoinFactory = await hre.ethers.getContractFactory('ZamozaCoin')
-  const ZamozaCoin = await ZamozaCoinFactory.deploy()
+  const zamozaCoinFactory = await hre.ethers.getContractFactory('ZamozaCoin')
+  const zamozaCoin = await zamozaCoinFactory.deploy()
 
-  await ZamozaCoin.deployed()
+  await zamozaCoin.deployed()
 
-  console.log('Zamoza Coin deployed to:', ZamozaCoin.address)
+  console.log('Zamoza Coin deployed to:', zamozaCoin.address)
 }
 
 main()
   .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+  .catch(error => {
+    console.error(error)
+    process.exit(1)
+  })
